@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+
+h1 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 25px;
+}
+
+header {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.pads {
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+}
+
+.pads div {
+  width: 100px;
+  height: 100px;
+  flex: 1;
+}
+
+.pad1 {
+  background-color: rgb(61, 194, 199);
+}
+
+.pad2 {
+  background-color: rgb(43, 41, 148);
+}
+
+.pad3 {
+  background-color: rgb(136, 25, 80);
+}
+
+.pad4 {
+  background-color: rgb(41, 148, 27);
+}
+
+.pad5 {
+  background-color: rgb(255, 255, 0);
+}
+
+.animation-zone > div {
+  position: absolute;
+  width: 100px;
+  height:100px;
+  border-radius: 50%;
+}
+
+@keyframes jump{
+0%{
+  left:0;
+  bottom:0;
+}
+
+50%{
+  left: 50%;
+  bottom: 50%;
+}
+
+100%{
+  left: 100%;
+  bottom: 0%;
+}
+}
